@@ -1,0 +1,247 @@
+\documentclass{article}
+\usepackage{assignmentstyle}
+
+\begin{document}
+	\maketitle
+	\pagestyle{fancy}
+	\thispagestyle{empty}
+
+	\part{Introduction}
+	
+	\question{What is AI?}
+
+	\answer
+
+	Artificial intelligence is a new science for stimulating and extending the intelligence of man and the relative theories, methods, technologies and implemetary systems.
+
+	The purpose of AI research is to prompt machine abilities in listening, recognizing, speaking, thinking and acting. 
+
+	The definition varies to different criteria; researches are focuesed either on thought processes and reasoning, or on behavior and action. 
+
+	\question{About Turing test?}
+
+	\answer
+
+	The test questions whether machines can behave intelligently. It is an imitation game where AI system tries to interact like a human through computer interaction. If the tester recognizes the component as human, the AI system actually passes the test.
+
+	\question{Expert System?}
+
+	\answer
+
+	An expert system is a computer system that emulates, or acts in all respects, with the decision-making capabilities of a human expert.
+
+	\question{AI schools?}
+
+	Logic/Symbol and Data/Connectionism.
+
+	\part{Predicate Calculus(propositional logic)}
+
+	\question{Six necessary points for AI system?}
+
+	\answer
+
+	\begin{enumerate}
+		\item Auto learning;
+		\item Made to solve heuristic problems rather than computational problems;
+		\item Able to handle uncertain information;
+		\item Able to handle qualitative problems;
+		\item Transform from problems to machine tasks;
+		\item Specialized for field knowledge and specific problems;
+	\end{enumerate}
+
+	\sep
+
+	\question{What is knowledge?}
+
+	\answer
+	
+	In Epistemology, knowledge is a philosophic proposition, which can be classified into priori knowledge and posteriori knowledge.
+
+	\begin{enumerate}
+		\item posteriori knowledge, derived from the senses; not always reliable; denialble on the basis of new knowledge;
+		\item priori knowledge, independent of the senses; universally true, cannot be denied without contradiction;
+	\end{enumerate}
+
+	Knowledge can also be divided into three parts: 
+
+	\begin{enumerate}
+		\item Procedural knowledge, knowing how to do something. e.g., fix a watch.
+		\item Declarative knowledge, knowing something to be true or false. e.g., time is expensive.
+		\item Tacit knowledge, unconscious knowledge; cannot be expressed by language. e.g., knowing how to walk, breathe.
+	\end{enumerate}
+	
+	\sep
+	
+	\question{Knowledge, data, information?}
+
+	\answer
+
+	\begin{description}
+		\item[Wisdom] Using knowledge in a beneficial way
+		\item[Metaknowledge] Rules about knowledge
+		\item[Knowledge] Rules about using information
+		\item[information] Potentially useful for knowledge
+		\item[Data] Potentially useful information
+		\item[Noise] No apparent information     
+	\end{description}
+
+	\sep
+
+	\question{Metaknowledge in AI?}
+
+	\answer
+
+	\begin{enumerate}
+		\item An ontology is the metaknowledge that describes everything known about the problem domain.
+		\item How to control and search knowledge.
+	\end{enumerate}
+
+	\sep
+	
+	\question{Core and goal of knowledge-based system?}
+
+	\answer
+
+	Programs = Algorithms + Data Structures
+
+	Knowledge-based System = Inference + Knowledge
+
+	Sparate actual meanings of words with reasoning process itself, make inferences w/o relying on semantics, and reach valid conclusions based on facts only.
+
+	\sep
+
+	\question{Statement for implication($p\rightarrow q$)?}
+
+	\answer
+
+	\begin{enumerate}
+		\item if p then q
+		\item q if p
+		\item p implies q
+		\item p is sufficient for q
+		\item q is necessary for p
+		\item p only if q
+	\end{enumerate}
+
+	\sep
+
+	\notice{$p\leftrightarrow q$ is true if p and q are both true or both false.}
+
+	\sep
+
+	\question{Other logic symbol and definition}
+
+	\answer
+
+	\begin{description}
+		\item[Tautology] a statement that is always true
+		\item[Contradiction] a statement that is always false
+		\item[Contingent] a statement that is neither a tautology nor a contradiction
+		\item[Implication] $p\Rightarrow q$ If a conditional is a tautology, it is an implication.
+		\item[Logical Equivalence] $p\Leftrightarrow \lnot\lnot p$ or $p\equiv \lnot\lnot p$ If a biconditional is a tautology, it is a logical equivalence or material equivalence.
+	\end{description}
+
+	\sep
+	
+	\question{Well-formed formulas(wff's)?}
+
+	\answer
+
+	\begin{enumerate}
+		\item Proposition symbols(numbers, alphabets; first letter upper-classed)
+		\item Connectives
+		\item Truth symbols
+	\end{enumerate}
+
+	e.g., P1$\equiv$True.
+
+	\sep
+
+	\part{Predicate Calculus(first-order predicate logic)}
+
+	\question{Shortages of propositional logic?}
+
+	\answer
+
+	Propositional logic can only deal with \textbf{complete} statements; it cannot validate internel structures of statements or syllogisms.
+
+	\sep
+	
+	\question{Simple predicate?}
+
+	\answer
+
+	\begin{enumerate}
+		\item name, lowercase letter followed by numbers/alphabets/underlines
+		\item arguments, \textbf{lowercase} letter followed by numbers/alphabets/underlines called \textbf{constant or function}; \textbf{uppercase} letter followed by ... called \textbf{variables}
+	\end{enumerate}
+
+	\sep
+	
+	\notice{In existential quantifier, always be alert to use "$\rightarrow$", as predicate relationshop may not always be sound. e.g., $$(\exists X)(\text{elephant}(X)\land \text{three\_legged}(X))$$}
+
+	\notice{Scope of quantifier is over all variables in the brackets. e.g., $$(\forall X)(\text{a}(X)\land(\exists Y)(\text{b}(Y)\lor\text{c}(Y)))$$which means for all $X$, there are some $Y$ satisfies the prodicate statement.}
+
+	\sep
+
+	\question{Extract negated quantifiers?}
+
+	\answer
+
+	$$\lnot (\forall X)(\text{p}(X))\equiv(\exists X)(\lnot \text{p}(X))$$
+
+	$$\lnot (\exists X)(\text{p}(X))\equiv(\forall X)(\lnot \text{p}(X))$$
+
+	\sep
+
+	\question{Turn syllogistic logic into predicate logic?}
+
+	\answer
+
+	\begin{description}
+		\item[universal affirmative] "All $S$ is $P$." $(\forall X)(\text{s}(X)\rightarrow\text{p}(X))$
+		\item[universal negative] "No $S$ is $P$." $(\forall X)(\text{s}(X)\rightarrow\lnot\text{p}(X))$
+		\item[particular affirmative] "Some $S$ is $P$." $(\exists X)(\text{s}(X)\land\text{p}(X))$
+		\item[particular negative] "Some $S$ is not $P$." $(\exists X)(\text{s}(X)\land\lnot\text{p}(X))$  
+	\end{description}
+
+	\sep
+
+	\question{Rules of inferences?}
+
+	\answer
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ll}
+			\toprule
+			modus ponens & $(P\rightarrow Q)\land P\Rightarrow Q$ \\
+			modus tollens & $(P\rightarrow Q)\land \lnot Q\Rightarrow \lnot P$ \\
+			chains rule & $(P\rightarrow Q)\land(Q\rightarrow R)\Rightarrow P\rightarrow R$ \\
+			\midrule
+			\multirow{3}{*}{basic equivalences} & $P\rightarrow Q\equiv \lnot P\lor Q$ \\
+			& $P\land\lnot P\equiv F$ \\
+			& $P\lor \lnot P\equiv T$ \\
+			\midrule
+			\multirow{2}{*}{the commutative law} & $P\land Q\equiv Q\land P$ \\
+			& $P\lor Q\equiv Q\lor P$ \\
+			\midrule
+			\multirow{2}{*}{the distribution law} & $P\land (Q\lor C)\equiv (P\land Q)\lor(P\land C)$ \\
+			& $P\lor (Q\land C)\equiv (P\lor Q)\land(P\lor C)$ \\
+			\midrule
+			\multirow{2}{*}{the associative law} & $P\land (Q\land C)\equiv(P\land Q)\land C$ \\
+			& $P\lor (Q\lor C)\equiv(P\lor Q)\lor C$ \\
+			\midrule
+			\multirow{2}{*}{De Morgan's law} & $\lnot(P\land Q)\equiv\lnot P\lor\lnot Q$ \\
+			& $\lnot(P\lor Q)\equiv\lnot P\land\lnot Q$ \\
+			\midrule
+			the contrapositive law & $P\rightarrow Q\equiv \lnot Q\rightarrow\lnot P$ \\
+			\midrule
+			the double negative law & $\lnot\lnot P\equiv P$ \\
+			\midrule
+			\multirow{2}{*}{the absorbtive law} & $P\lor(P\land Q)\equiv P$ \\
+			& $P\land(P\lor Q)\equiv P$ \\
+			\toprule
+		\end{tabular}
+	\end{table}
+\end{document}
