@@ -31,4 +31,4 @@ The definition varies to different criteria; researches are focuesed either on t
 
 本项目使用了[Assignemnt-Tex-Template](https://github.com/primus2019/Tex-For-Everything/tree/myassignment) 的Latex模板进行编辑，[tex源代码](assignment.tex)及[相应配置文件](assignment.sty)可在项目根目录下找到。
 
-如需修改和调整，可使用Lualatex重新编译。[结果输出](outputs/assignment.pdf)位于`output/`文件夹中。由于目前仍有少量即时授课内容没有更新，暂不提供编译文件。将在课程授课结束后提供完整编译文件。
+如需修改和调整，可使用Lualatex重新编译。[结果输出](outputs/)位于`output/`文件夹中。由于目前仍有少量即时授课内容没有更新，暂不提供编译文件。将在课程授课结束后提供完整编译文件。
